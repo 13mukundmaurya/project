@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Being Traveler - Logout</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        fetch('/logout')
+            .then(() => {
+                setTimeout(() => {
+                    window.location.href = '/index.html';
+                }, 3000);
+            });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Being Traveler</h1>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Logging Out...</h2>
+        <p>You have been successfully logged out. Redirecting to the home page in 3 seconds.</p>
+    </main>
+</body>
+</html>
