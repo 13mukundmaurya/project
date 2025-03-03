@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Being Traveler</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1><a href="index.html">Being Traveler</a></h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#destinations">Destinations</a></li>
+          <li><a href="index.html#packages">Tour Packages</a></li>
+          <li><a href="index.html#guides">Travel Guides</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Section -->
+  <section class="login-section">
+    <div class="container">
+      <div class="login-container">
+        <div class="login-image">
+          <img src="/placeholder.svg?height=600&width=800" alt="Travel Adventure">
+          <div class="overlay-text">
+            <h2>Start Your Journey</h2>
+            <p>Log in to access exclusive travel deals and personalized recommendations</p>
+          </div>
+        </div>
+        <div class="login-form-container">
+          <div class="form-tabs">
+            <button class="tab-btn active" data-tab="login">Login</button>
+            <button class="tab-btn" data-tab="register">Register</button>
+          </div>
+          
+          <!-- Login Form -->
+          <div class="tab-content active" id="login-tab">
+            <h2>Welcome Back</h2>
+            <p>Log in to your Being Traveler account</p>
+            
+            <form id="loginForm" class="auth-form">
+              <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="loginEmail" placeholder="Your email address" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="loginPassword" placeholder="Your password" required>
+                </div>
+              </div>
+              <div class="form-options">
+                <div class="remember-me">
+                  <input type="checkbox" id="rememberMe">
+                  <label for="rememberMe">Remember me</label>
+                </div>
+                <a href="#" class="forgot-password" id="forgotPasswordLink">Forgot password?</a>
+              </div>
+              <button type="submit" class="btn-primary btn-full">Login</button>
+            </form>
+            
+            <div class="social-login">
+              <p>Or login with</p>
+              <div class="social-buttons">
+                <button class="social-btn google">
+                  <i class="fab fa-google"></i>
+                  <span>Google</span>
+                </button>
+                <button class="social-btn facebook">
+                  <i class="fab fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Register Form -->
+          <div class="tab-content" id="register-tab">
+            <h2>Create Account</h2>
+            <p>Join Being Traveler for personalized travel experiences</p>
+            
+            <form id="registerForm" class="auth-form">
+              <div class="form-group">
+                <label for="registerName">Full Name</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="registerName" placeholder="Your full name" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="registerEmail" placeholder="Your email address" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="registerPassword" placeholder="Create a password" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+                </div>
+              </div>
+              <div class="form-options">
+                <div class="remember-me">
+                  <input type="checkbox" id="agreeTerms" required>
+                  <label for="agreeTerms">I agree to the <a href="#">Terms & Conditions</a></label>
+                </div>
+              </div>
+              <button type="submit" class="btn-primary btn-full">Create Account</button>
+            </form>
+            
+            <div class="social-login">
+              <p>Or register with</p>
+              <div class="social-buttons">
+                <button class="social-btn google">
+                  <i class="fab fa-google"></i>
+                  <span>Google</span>
+                </button>
+                <button class="social-btn facebook">
+                  <i class="fab fa-facebook-f"></i>
+                  <span>Facebook</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Forgot Password Form -->
+          <div class="tab-content" id="forgot-tab">
+            <h2>Reset Password</h2>
+            <p>Enter your email to receive a password reset link</p>
+            
+            <form id="forgotPasswordForm" class="auth-form">
+              <div class="form-group">
+                <label for="forgotEmail">Email</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-envelope"></i>
+                  <input type="email" id="forgotEmail" placeholder="Your email address" required>
+                </div>
+              </div>
+              <button type="submit" class="btn-primary btn-full">Send Reset Link</button>
+            </form>
+            
+            <div class="back-to-login">
+              <a href="#" id="backToLoginLink">Back to login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-content">
+        <p>"Being Traveler made our Golden Triangle tour absolutely perfect. The personalized itinerary covered all the major attractions while staying within our budget. Highly recommended!"</p>
+        <div class="testimonial-author">
+          <img src="/placeholder.svg?height=60&width=60" alt="Rahul & Priya">
+          <div>
+            <h4>Rahul & Priya</h4>
+            <p>Golden Triangle Tour</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Being Traveler</h3>
+          <p>Your trusted partner for personalized travel experiences tailored to your budget and preferences.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#destinations">Destinations</a></li>
+            <li><a href="index.html#packages">Tour Packages</a></li>
+            <li><a href="index.html#guides">Travel Guides</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Popular Destinations</h4>
+          <ul>
+            <li><a href="#">Bali, Indonesia</a></li>
+            <li><a href="#">Santorini, Greece</a></li>
+            <li><a href="#">Kyoto, Japan</a></li>
+            <li><a href="#">Machu Picchu, Peru</a></li>
+            <li><a href="#">Marrakech, Morocco</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City, 10001</li>
+            <li><i class="fas fa-envelope"></i> info@beingtraveler.com</li>
+            <li><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Being Traveler. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="login-script.js"></script>
+</body>
+</html>
+

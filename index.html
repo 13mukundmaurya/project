@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Being Traveler - Your Travel Guide</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Being Traveler</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#packages">Tour Packages</a></li>
+          <li><a href="#guides">Travel Guides</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="login.html" class="login-link">Login / Register</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Discover the World Your Way</h1>
+      <p>Personalized travel experiences tailored to your budget</p>
+      <div class="search-container">
+        <input type="text" placeholder="Where do you want to go?">
+        <button class="btn-primary">Search</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <i class="fas fa-map-marked-alt"></i>
+          <h3>Expert Guides</h3>
+          <p>Local experts who know the hidden gems and authentic experiences.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-wallet"></i>
+          <h3>Budget Friendly</h3>
+          <p>Customized packages that fit your budget without compromising quality.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-route"></i>
+          <h3>Personalized Itineraries</h3>
+          <p>Tailored travel plans based on your interests and preferences.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fas fa-headset"></i>
+          <h3>24/7 Support</h3>
+          <p>Round-the-clock assistance throughout your journey.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Destinations -->
+  <section id="destinations" class="destinations">
+    <div class="container">
+      <h2 class="section-title">Popular Destinations</h2>
+      <div class="destinations-grid">
+        <div class="destination-card">
+          <img src="taj mahal.jpg" alt="Taj Mahal, Agra">
+          <div class="destination-info">
+            <h3>Taj Mahal, Agra</h3>
+            <p>Experience the magnificent symbol of eternal love and architectural marvel</p>
+            <a href="#" class="btn-secondary">Explore</a>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="Varanasi.jpg" alt="Varanasi Ghats">
+          <div class="destination-info">
+            <h3>Varanasi Ghats</h3>
+            <p>Discover the spiritual heart of India along the sacred Ganges River</p>
+            <a href="#" class="btn-secondary">Explore</a>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="jaipur.jpg" alt="Jaipur, Rajasthan">
+          <div class="destination-info">
+            <h3>Jaipur, Rajasthan</h3>
+            <p>Explore the Pink City with its majestic forts and vibrant culture</p>
+            <a href="#" class="btn-secondary">Explore</a>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="kerela.jpg" alt="Kerala Backwaters">
+          <div class="destination-info">
+            <h3>Kerala Backwaters</h3>
+            <p>Cruise through serene waterways and experience God's Own Country</p>
+            <a href="#" class="btn-secondary">Explore</a>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="goa.jpg" alt="Goa Beaches">
+          <div class="destination-info">
+            <h3>Goa Beaches</h3>
+            <p>Relax on pristine beaches and enjoy vibrant nightlife and Portuguese heritage</p>
+            <a href="#" class="btn-secondary">Explore</a>
+          </div>
+        </div>
+        <div class="destination-card">
+          <img src="Ladakh.jpg" alt="Ladakh">
+          <div class="destination-info">
+            <h3>Ladakh</h3>
+            <p>Experience the breathtaking Himalayan landscapes and Buddhist monasteries</p>
+            <a href="#" class="btn-secondary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour Packages Section -->
+  <section id="packages" class="packages">
+    <div class="container">
+      <h2 class="section-title">Tour Packages</h2>
+      <div class="budget-filter">
+        <p>Filter by budget:</p>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="budget">Budget</button>
+          <button class="filter-btn" data-filter="standard">Standard</button>
+          <button class="filter-btn" data-filter="luxury">Luxury</button>
+        </div>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card" data-category="budget">
+          <div class="package-image">
+            <img src="golden.jpg" alt="Golden Triangle Tour">
+            <div class="price">₹24,999</div>
+          </div>
+          <div class="package-content">
+            <h3>Golden Triangle Tour</h3>
+            <p class="duration"><i class="far fa-clock"></i> 6 Days</p>
+            <p class="description">Explore Delhi, Agra, and Jaipur with this classic introduction to India's rich heritage.</p>
+            <div class="package-features">
+              <span><i class="fas fa-bed"></i> 3-Star Hotels</span>
+              <span><i class="fas fa-utensils"></i> Breakfast</span>
+              <span><i class="fas fa-car"></i> AC Transport</span>
+            </div>
+            <a href="#" class="btn-primary">View Details</a>
+          </div>
+        </div>
+        <div class="package-card" data-category="standard">
+          <div class="package-image">
+            <img src="kerelaa.jpg" alt="Kerala Experience">
+            <div class="price">₹39,999</div>
+          </div>
+          <div class="package-content">
+            <h3>Kerala Experience</h3>
+            <p class="duration"><i class="far fa-clock"></i> 8 Days</p>
+            <p class="description">Discover Munnar tea gardens, Alleppey backwaters, and Kovalam beaches.</p>
+            <div class="package-features">
+              <span><i class="fas fa-bed"></i> 4-Star Hotels</span>
+              <span><i class="fas fa-utensils"></i> All Meals</span>
+              <span><i class="fas fa-ship"></i> Houseboat Stay</span>
+            </div>
+            <a href="#" class="btn-primary">View Details</a>
+          </div>
+        </div>
+        <div class="package-card" data-category="luxury">
+          <div class="package-image">
+            <img src="RoyalRajasthan.jpg" alt="Royal Rajasthan">
+            <div class="price">₹89,999</div>
+          </div>
+          <div class="package-content">
+            <h3>Royal Rajasthan</h3>
+            <p class="duration"><i class="far fa-clock"></i> 10 Days</p>
+            <p class="description">Live like royalty in palace hotels while exploring Rajasthan's majestic heritage.</p>
+            <div class="package-features">
+              <span><i class="fas fa-bed"></i> Palace Hotels</span>
+              <span><i class="fas fa-utensils"></i> Gourmet Dining</span>
+              <span><i class="fas fa-car"></i> Luxury Transport</span>
+            </div>
+            <a href="#" class="btn-primary">View Details</a>
+          </div>
+        </div>
+        <div class="package-card" data-category="budget">
+          <div class="package-image">
+            <img src="kashi.jpg" alt="Spiritual Varanasi">
+            <div class="price">₹19,999</div>
+          </div>
+          <div class="package-content">
+            <h3>Spiritual Varanasi</h3>
+            <p class="duration"><i class="far fa-clock"></i> 4 Days</p>
+            <p class="description">Experience the spiritual essence of India with Ganga aarti and temple visits.</p>
+            <div class="package-features">
+              <span><i class="fas fa-bed"></i> Heritage Hotels</span>
+              <span><i class="fas fa-utensils"></i> Vegetarian Meals</span>
+              <span><i class="fas fa-boat"></i> River Cruise</span>
+            </div>
+            <a href="#" class="btn-primary">View Details</a>
+          </div>
+        </div>
+        <div class="package-card" data-category="standard">
+          <div class="package-image">
+            <img src="north.jpg" alt="Northeast Explorer">
+            <div class="price">₹45,999</div>
+          </div>
+          <div class="package-content">
+            <h3>Northeast Explorer</h3>
+            <p class="duration"><i class="far fa-clock"></i> 9 Days</p>
+            <p class="description">Explore Kaziranga, Shillong, and Cherrapunji's natural wonders.</p>
+            <div class="package-features">
+              <span><i class="fas fa-bed"></i> Eco Resorts</span>
+              <span><i class="fas fa-utensils"></i> Local Cuisine</span>
+              <span><i class="fas fa-hiking"></i> Guided Treks</span>
+            </div>
+            <a href="#" class="btn-primary">View Details</a>
+          </div>
+        </div>
+        <div class="package-card" data-category="luxury">
+          <div class="package-image">
+            <img src="leh.jpg" alt="Ladakh Adventure">
+            <div class="price">₹79,999</div>
+          </div>
+          <div class="package-content">
+            <h3>Ladakh Adventure</h3>
+            <p class="duration"><i class="far fa-clock"></i> 8 Days</p>
+            <p class="description">Luxury camping under stars, monastery visits, and Pangong Lake expedition.</p>
+            <div class="package-features">
+              <span><i class="fas fa-campground"></i> Luxury Camps</span>
+              <span><i class="fas fa-utensils"></i> All Meals</span>
+              <span><i class="fas fa-jeep"></i> 4x4 Transport</span>
+            </div>
+            <a href="#" class="btn-primary">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel Guides Section -->
+  <section id="guides" class="guides">
+    <div class="container">
+      <h2 class="section-title">Travel Guides</h2>
+      <div class="guides-grid">
+        <div class="guide-card">
+          <img src="rajsthan-1.jpg" alt="Ultimate Rajasthan Guide">
+          <div class="guide-content">
+            <h3>Ultimate Rajasthan Guide</h3>
+            <p>Everything you need to know about exploring the Land of Kings.</p>
+            <a href="#" class="btn-secondary">Read Guide</a>
+          </div>
+        </div>
+        <div class="guide-card">
+          <img src="kerela1.jpg" alt="Kerala on a Budget">
+          <div class="guide-content">
+            <h3>Kerala on a Budget</h3>
+            <p>How to experience God's Own Country without breaking the bank.</p>
+            <a href="#" class="btn-secondary">Read Guide</a>
+          </div>
+        </div>
+        <div class="guide-card">
+          <img src="spiritual.jpg" alt="Spiritual India">
+          <div class="guide-content">
+            <h3>Spiritual India</h3>
+            <p>A comprehensive guide to India's most sacred destinations.</p>
+            <a href="#" class="btn-secondary">Read Guide</a>
+          </div>
+        </div>
+        <div class="guide-card">
+          <img src="adventure.jpg" alt="Himalayan Adventures">
+          <div class="guide-content">
+            <h3>Himalayan Adventures</h3>
+            <p>Essential tips for exploring India's magnificent mountain regions.</p>
+            <a href="#" class="btn-secondary">Read Guide</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">What Our Travelers Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-slide active">
+          <div class="testimonial-content">
+            <p>"Being Traveler made our honeymoon in Bali absolutely perfect. The personalized itinerary hit all the spots we wanted to see while staying within our budget. Highly recommended!"</p>
+            <div class="testimonial-author">
+              <img src="/placeholder.svg?height=60&width=60" alt="Sarah & Mike">
+              <div>
+                <h4>Sarah & Mike</h4>
+                <p>Bali Romantic Getaway</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <p>"As a solo traveler on a tight budget, I was amazed at how Being Traveler created such an incredible experience in Thailand. I met great people and saw amazing places without breaking the bank."</p>
+            <div class="testimonial-author">
+              <img src="/placeholder.svg?height=60&width=60" alt="David">
+              <div>
+                <h4>David</h4>
+                <p>Thailand Backpacker Tour</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <p>"Our family trip to Japan was flawless thanks to Being Traveler. The guides were knowledgeable, accommodations were perfect for our needs, and the kids had a blast. Worth every penny!"</p>
+            <div class="testimonial-author">
+              <img src="/placeholder.svg?height=60&width=60" alt="The Johnson Family">
+              <div>
+                <h4>Johnson Family</h4>
+                <p>Japan Family Adventure</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-controls">
+        <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="testimonial-dots">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+        <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter-content">
+        <h2>Get Travel Inspiration & Special Offers</h2>
+        <p>Subscribe to our newsletter and be the first to know about new destinations and exclusive deals.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Our Location</h3>
+              <p>123 Travel Street, Adventure City, 10001</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h3>Email Us</h3>
+              <p>info@beingtraveler.com</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h3>Call Us</h3>
+              <p>+1 (555) 123-4567</p>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Trip Planner -->
+  <section class="trip-planner">
+    <div class="container">
+      <div class="planner-content">
+        <h2>Plan Your Custom Trip</h2>
+        <p>Tell us your budget and preferences, and we'll create a personalized travel plan just for you.</p>
+        <a href="#" class="btn-primary">Start Planning</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>Being Traveler</h3>
+          <p>Your trusted partner for personalized travel experiences tailored to your budget and preferences.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Tour Packages</a></li>
+            <li><a href="#guides">Travel Guides</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Popular Destinations</h4>
+          <ul>
+            <li><a href="#">Taj Mahal, Agra</a></li>
+            <li><a href="#">Jaipur, Rajasthan</a></li>
+            <li><a href="#">Kerala Backwaters</a></li>
+            <li><a href="#">Varanasi Ghats</a></li>
+            <li><a href="#">Goa Beaches</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Travel Street, Adventure City, 10001</li>
+            <li><i class="fas fa-envelope"></i> info@beingtraveler.com</li>
+            <li><i class="fas fa-phone-alt"></i> 9835133121</li>
+            <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 Being Traveler. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
